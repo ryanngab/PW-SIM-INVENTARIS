@@ -842,7 +842,7 @@
 									</span>
 									<div class="menu-sub menu-sub-accordion">
 										<div class="menu-item">
-											<a class="menu-link {{ request()->routeIs('tanah.index') ? 'active' : '' }}" href="{{ route('barang.index')}}">
+											<a class="menu-link {{ request()->routeIs('tanah.index') ? 'active' : '' }}" href="{{ route('tanah.index')}}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -850,7 +850,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link {{ request()->routeIs('gedung.index') ? 'active' : '' }}" href="{{ route('barang.index')}}">
+											<a class="menu-link {{ request()->routeIs('gedung.index') ? 'active' : '' }}" href="{{ route('gedung.index')}}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -858,7 +858,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link {{ request()->routeIs('ruangan.index') ? 'active' : '' }}" href="{{ route('barang.index')}}">
+											<a class="menu-link {{ request()->routeIs('ruangan.index') ? 'active' : '' }}" href="{{ route('ruangan.index')}}">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>

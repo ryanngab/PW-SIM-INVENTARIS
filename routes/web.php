@@ -43,15 +43,23 @@ Route::get('/admin-dashboard',[DashboardController::class,'index'])->name('admin
 
 // Route Gedung
 Route::get('/admin-dashboard/Gedung',[GedungController::class,'index'])->name('gedung.index');
+Route::get('/admin-dashboard/Gedung/add',[GedungController::class,'create'])->name('gedung.create');
+Route::get('/admin-dashboard/Gedung/edit',[GedungController::class,'edit'])->name('gedung.edit');
 
 // Route Ruangan
 Route::get('/admin-dashboard/Ruangan',[RuanganController::class,'index'])->name('ruangan.index');
+Route::get('/admin-dashboard/Ruangan/add',[RuanganController::class,'create'])->name('ruangan.add');
+Route::get('/admin-dashboard/Ruangan/edit',[RuanganController::class,'edit'])->name('ruangan.edit');
 
 // Route Tanah
 Route::get('/admin-dashboard/Tanah',[TanahController::class,'index'])->name('tanah.index');
+Route::get('/admin-dashboard/Tanah/add',[TanahController::class,'create'])->name('tanah.add');
+Route::get('/admin-dashboard/Tanah/edit',[TanahController::class,'edit'])->name('tanah.edit');
 
 // Route Barang
 Route::get('/admin-dashboard/Barang',[BarangController::class,'index'])->name('barang.index');
+Route::get('/admin-dashboard/Barang/add',[BarangController::class,'create'])->name('barang.add');
+Route::get('/admin-dashboard/Barang/edit',[BarangController::class,'edit'])->name('barang.edit');
 
 
 

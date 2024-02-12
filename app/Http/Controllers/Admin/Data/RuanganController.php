@@ -13,4 +13,15 @@ class RuanganController extends Controller
         $title = 'Data Ruangan';
         return view('Dashboard.Admin.Data.Ruangan.index',compact('title'));
     }
+
+    public function create() {
+        $title = 'Tambah Data Ruangan';
+        return view('Dashboard.Admin.Data.Ruangan.add',compact('title'));
+    }
+
+    public function edit() {
+        $title = 'Edit Data Ruangan';
+        return view('Dashboard.Admin.Data.Ruangan.edit',compact('title'));
+    }
+
 }

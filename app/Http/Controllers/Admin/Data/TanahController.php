@@ -13,4 +13,14 @@ class TanahController extends Controller
         $title = 'Data Tanah';
         return view('Dashboard.Admin.Data.Tanah.index',compact('title'));
     }
+
+    public function create() {
+        $title = 'Tambah Data Tanah';
+        return view('Dashboard.Admin.Data.Tanah.add',compact('title'));
+    }
+
+    public function edit() {
+        $title = 'Edit Data Tanah';
+        return view('Dashboard.Admin.Data.Tanah.edit',compact('title'));
+    }
 }

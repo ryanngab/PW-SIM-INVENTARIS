@@ -13,4 +13,14 @@ class BarangController extends Controller
         $title = 'Data Barang';
         return view('Dashboard.Admin.Data.Barang.index',compact('title'));
     }
+
+    public function create() {
+        $title = 'Tambah Data Barang';
+        return view('Dashboard.Admin.Data.Barang.add',compact('title'));
+    }
+
+    public function edit() {
+        $title = 'Edit Data Barang';
+        return view('Dashboard.Admin.Data.Barang.edit',compact('title'));
+    }
 }
