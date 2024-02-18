@@ -7,7 +7,7 @@
             <h2>{{$title}}</h2>
         </div>
         <div class="card-toolbar">
-            <a href="{{route('pengguna.index')}}" class="btn btn-danger btn-sm">Back</a>
+            <a href="{{route('ruangan.index')}}" class="btn btn-danger btn-sm">Back</a>
         </div>
     </div>
 </div>
@@ -78,12 +78,34 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <div class="d-flex flex-column mb-8 fv-row">
-                        <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                            <span class="required">Jumalah Barang</span>
-                        </label>
-                        <input type="text" class="form-control form-control-solid"
-                            placeholder="Masukan Jumlah Barang" />
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-column mb-8 fv-row">
+                                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                    <span class="required">Luas</span>
+                                </label>
+                                <input type="text" class="form-control form-control-solid" name="luas" placeholder="Masukan Luas ruangan" />
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-column mb-8 fv-row">
+                                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                    <span class="required">Lebar</span>
+                                </label>
+                                <input type="text" class="form-control form-control-solid" name="lebar" placeholder="masukan lebar ruangan" />
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-column mb-8 fv-row">
+                                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                    <span class="required">Panjang</span>
+                                </label>
+                                <input type="text" class="form-control form-control-solid" name="panjang" placeholder="masukan panjang ruangana" />
+                            </div>
+    
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -104,15 +126,6 @@
                         <!--end::Select-->
                     </div>
                 </div>
-            </div>
-
-
-            <div class="d-flex flex-column mb-8 fv-row">
-                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="required">Jumlah</span>
-                </label>
-                <input type="number" class="form-control form-control-solid"
-                    placeholder="Masukan Jumlah Barang" />
             </div>
             <!--begin::Actions-->
             <div class="text-end">

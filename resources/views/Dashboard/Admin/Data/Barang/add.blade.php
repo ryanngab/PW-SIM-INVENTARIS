@@ -7,7 +7,7 @@
             <h2>{{$title}}</h2>
         </div>
         <div class="card-toolbar">
-            <a href="{{route('pengguna.index')}}" class="btn btn-danger btn-sm">Back</a>
+            <a href="{{route('barang.index')}}" class="btn btn-danger btn-sm">Back</a>
         </div>
     </div>
 </div>
@@ -16,6 +16,20 @@
     <div class="card-body">
         <!--begin:Form-->
         <form class="form" action="#">
+            <div class="d-flex flex-column mb-5 fv-row">
+                <!--begin::Label-->
+                <label class="d-flex align-items-center fs-5 fw-bold mb-2">
+                    <span class="required">Pilih nomor ruangan </span>
+                </label>
+                <select name="role" data-control="select2"
+                    data-placeholder="Pilih nomor ruangan"
+                    class="form-select form-select-solid">
+                    <option value="">Pilih nomor ruanagan....</option>
+                    <option value="Baik">Baik</option>
+                    <option value="Buruk">Buruk</option>
+                </select>
+                <!--end::Select-->
+            </div>
             <div class="row">
                 <div class="col-lg-6">
                     <div class="d-flex flex-column mb-8 fv-row">
@@ -62,8 +76,6 @@
                         <label class="d-flex align-items-center fs-5 fw-bold mb-2">
                             <span class="required">Pilih Kondisi barang </span>
                         </label>
-                        <!--end::Label-->
-                        <!--begin::Select-->
                         <select name="role" data-control="select2"
                             data-placeholder="Pilih kondisi barang"
                             class="form-select form-select-solid">
@@ -74,14 +86,6 @@
                         <!--end::Select-->
                     </div>
                 </div>
-            </div>
-
-            <div class="d-flex flex-column mb-8 fv-row">
-                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="required">Jumlah</span>
-                </label>
-                <input type="number" class="form-control form-control-solid"
-                    placeholder="Masukan Jumlah Barang" />
             </div>
             <!--begin::Actions-->
             <div class="text-end">

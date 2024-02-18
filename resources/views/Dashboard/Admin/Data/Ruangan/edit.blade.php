@@ -7,7 +7,7 @@
             <h2>{{$title}}</h2>
         </div>
         <div class="card-toolbar">
-            <a href="{{route('pengguna.index')}}" class="btn btn-danger btn-sm">Back</a>
+            <a href="{{route('ruangan.index')}}" class="btn btn-danger btn-sm">Back</a>
         </div>
     </div>
 </div>
@@ -20,24 +20,24 @@
                 <div class="col-lg-6">
                     <div class="d-flex flex-column mb-8 fv-row">
                         <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                            <span class="required">Name Barang</span>
+                            <span class="required">Name Ruangan</span>
                         </label>
                         <input type="text" class="form-control form-control-solid"
-                            placeholder="Masukan Nama Barang" />
+                            placeholder="Masukan Nama Ruangam" />
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="d-flex flex-column mb-5 fv-row">
                         <!--begin::Label-->
                         <label class="d-flex align-items-center fs-5 fw-bold mb-2">
-                            <span class="required">Pilih Kondisi barang </span>
+                            <span class="required">Pilih Gedung </span>
                         </label>
                         <!--end::Label-->
                         <!--begin::Select-->
                         <select name="role" data-control="select2"
-                            data-placeholder="Pilih kondisi barang"
+                            data-placeholder="Pilih nama gedung"
                             class="form-select form-select-solid">
-                            <option value="">Pilih Status ....</option>
+                            <option value="">Pilih Gedung....</option>
                             <option value="Baik">Baik</option>
                             <option value="Buruk">Buruk</option>
                         </select>
@@ -50,24 +50,24 @@
                 <div class="col-lg-6">
                     <div class="d-flex flex-column mb-8 fv-row">
                         <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                            <span class="required">Jumalah Barang</span>
+                            <span class="required">Nomor Ruangan</span>
                         </label>
                         <input type="text" class="form-control form-control-solid"
-                            placeholder="Masukan Jumlah Barang" />
+                            placeholder="Masukan Nomor Ruangan" />
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="d-flex flex-column mb-5 fv-row">
                         <!--begin::Label-->
                         <label class="d-flex align-items-center fs-5 fw-bold mb-2">
-                            <span class="required">Pilih Kondisi barang </span>
+                            <span class="required">Pj Ruangan </span>
                         </label>
                         <!--end::Label-->
                         <!--begin::Select-->
                         <select name="role" data-control="select2"
-                            data-placeholder="Pilih kondisi barang"
+                            data-placeholder="Pilih Pj Ruangan"
                             class="form-select form-select-solid">
-                            <option value="">Pilih Status ....</option>
+                            <option value="">Pilih Pj Ruangan....</option>
                             <option value="Baik">Baik</option>
                             <option value="Buruk">Buruk</option>
                         </select>
@@ -76,12 +76,56 @@
                 </div>
             </div>
 
-            <div class="d-flex flex-column mb-8 fv-row">
-                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
-                    <span class="required">Jumlah</span>
-                </label>
-                <input type="number" class="form-control form-control-solid"
-                    placeholder="Masukan Jumlah Barang" />
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-column mb-8 fv-row">
+                                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                    <span class="required">Luas</span>
+                                </label>
+                                <input type="text" class="form-control form-control-solid" name="luas" placeholder="Masukan Luas ruangan" />
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-column mb-8 fv-row">
+                                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                    <span class="required">Lebar</span>
+                                </label>
+                                <input type="text" class="form-control form-control-solid" name="lebar" placeholder="masukan lebar ruangan" />
+                            </div>
+    
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="d-flex flex-column mb-8 fv-row">
+                                <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                    <span class="required">Panjang</span>
+                                </label>
+                                <input type="text" class="form-control form-control-solid" name="panjang" placeholder="masukan panjang ruangana" />
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-flex flex-column mb-5 fv-row">
+                        <!--begin::Label-->
+                        <label class="d-flex align-items-center fs-5 fw-bold mb-2">
+                            <span class="required">Pilih Rayon </span>
+                        </label>
+                        <!--end::Label-->
+                        <!--begin::Select-->
+                        <select name="role" data-control="select2"
+                            data-placeholder="Pilih Rayon"
+                            class="form-select form-select-solid">
+                            <option value="">Pilih Rayon....</option>
+                            <option value="Baik">Baik</option>
+                            <option value="Buruk">Buruk</option>
+                        </select>
+                        <!--end::Select-->
+                    </div>
+                </div>
             </div>
             <!--begin::Actions-->
             <div class="text-end">

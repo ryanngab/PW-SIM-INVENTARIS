@@ -9,9 +9,8 @@
             <div class="d-flex flex-warp">
             <button class="btn btn-primary btn-sm me-2">import Excel</button>
             <button class="btn btn-primary btn-sm me-2">import PDF</button>
-            <button class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                    data-bs-target="#kt_modal_add"><i class="fa fa-plus-circle"></i>Tambah
-                    Data</button>
+            <a href="{{route('tanah.add')}}" class="btn btn-primary btn-sm me-2"><i class="fa fa-plus-circle"></i>Tambah
+                    Data</a>
             </div>
         </div>
     </div>
