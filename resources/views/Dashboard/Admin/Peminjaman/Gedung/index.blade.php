@@ -9,9 +9,8 @@
             <div class="d-flex flex-warp">
             <button class="btn btn-primary btn-sm me-2">import Excel</button>
             <button class="btn btn-primary btn-sm me-2">import PDF</button>
-            <button class="btn btn-primary btn-sm me-2" data-bs-toggle="modal"
-                    data-bs-target="#kt_modal_add"><i class="fa fa-plus-circle"></i>Tambah
-                    Data</button>
+            <a href="{{route('peminjamanGedung.add')}}" class="btn btn-primary btn-sm me-2"><i class="fa fa-plus-circle"></i>Tambah
+                    Data</a>
             </div>
         </div>
     </div>
@@ -113,15 +112,12 @@
                 <!--begin::Table row-->
                 <tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0">
                     <th class="w-10px pe-2">#</th>
-                    <th class="min-w-200px">Dokumen Persyaratan</th>
-                    <th class="min-w-125px">Aktif</th>
-                    <th class="min-w-150px">Mandatory</th>
-                    <th class="min-w-200px">Sub Jenis</th>
-                    <th class="min-w-125px">Nomor</th>
-                    <th class="min-w-200px">Tanggal Mulai</th>
-                    <th class="min-w-200px">Tanggal Akhir</th>
-                    <th class="min-w-125px">Dapat Diubah</th>
-                    <th class="min-w-200px">Indoneisa</th>
+                    <th class="min-w-200px">Nama Gedung</th>
+                    <th class="min-w-125px">ID Gedung</th>
+                    <th class="min-w-200px">Status Gedung</th>
+                    <th class="min-w-125px">Status</th>
+                    <th class="min-w-200px">Tanggal dipinjam</th>
+                    <th class="min-w-200px">Tanggal dikembalikan</th>
                     <th class="text-start min-w-200px">Aksi</th>
                 </tr>
                 <!--end::Table row-->
@@ -129,22 +125,13 @@
             <!--end::Table head-->
             <tbody class="text-gray-600 fw-bold">
                 <tr>
-                    <td>1</td>
-                    <td>Identitias Narahubung</td>
-                    <td>Tidak</td>
-                    <td>Tidak</td>
-                    <td>
-                        <select name="" id="" class="form-select">
-                            <option value="KTP">KTP</option>
-                            <option value="Passport">Passport</option>
-                            <option value="SIM">SIM</option>
-                        </select>
-                    </td>
-                    <td>Ya(hanya text)</td>
-                    <td>Tidak</td>
-                    <td>Tidak</td>
-                    <td>Ya</td>
-                    <td>Tidak</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>   </td>
                     <td class="d-flex text-start">
                         <button class="btn btn-warning btn-sm me-2"
                             data-bs-target="#kt_modal_update" data-bs-toggle="modal">

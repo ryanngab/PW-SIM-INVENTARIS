@@ -13,4 +13,16 @@ class PeminjamanBarangController extends Controller
         $title = 'Data Peminjaman Barang';
         return view('Dashboard.Admin.Peminjaman.Barang.index',compact('title'));
     }
+
+    public function create() {
+
+        $title = 'Pinjam Barang';
+        return view('Dashboard.Admin.Peminjaman.Barang.add',compact('title'));
+    }
+
+    public function edit() {
+
+        $title = 'Pinjam Barang';
+        return view('Dashboard.Admin.Peminjaman.Barang.add',compact('title'));
+    }
 }

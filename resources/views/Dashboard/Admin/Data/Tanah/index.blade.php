@@ -112,38 +112,23 @@
                 <!--begin::Table row-->
                 <tr class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0">
                     <th class="w-10px pe-2">#</th>
-                    <th class="min-w-200px">Dokumen Persyaratan</th>
-                    <th class="min-w-125px">Aktif</th>
-                    <th class="min-w-150px">Mandatory</th>
-                    <th class="min-w-200px">Sub Jenis</th>
-                    <th class="min-w-125px">Nomor</th>
-                    <th class="min-w-200px">Tanggal Mulai</th>
-                    <th class="min-w-200px">Tanggal Akhir</th>
-                    <th class="min-w-125px">Dapat Diubah</th>
-                    <th class="min-w-200px">Indoneisa</th>
+                    <th class="min-w-200px">Nama Tanah</th>
+                    <th class="min-w-150px">Lebar</th>
+                    <th class="min-w-200px">panjang</th>
+                    <th class="min-w-125px">Luas</th>
                     <th class="text-start min-w-200px">Aksi</th>
                 </tr>
                 <!--end::Table row-->
             </thead>
             <!--end::Table head-->
             <tbody class="text-gray-600 fw-bold">
+                @foreach ($tanahs as $tanah)
                 <tr>
-                    <td>1</td>
-                    <td>Identitias Narahubung</td>
-                    <td>Tidak</td>
-                    <td>Tidak</td>
-                    <td>
-                        <select name="" id="" class="form-select">
-                            <option value="KTP">KTP</option>
-                            <option value="Passport">Passport</option>
-                            <option value="SIM">SIM</option>
-                        </select>
-                    </td>
-                    <td>Ya(hanya text)</td>
-                    <td>Tidak</td>
-                    <td>Tidak</td>
-                    <td>Ya</td>
-                    <td>Tidak</td>
+                    <td>{{$loop->iteration}}</td>
+                    <td>{{$tanah->name}}</td>
+                    <td>{{$tanah->lebar}}</td>
+                    <td>{{$tanah->panjang}}</td>
+                    <td>{{$tanah->luas}}</td>
                     <td class="d-flex text-start">
                         <button class="btn btn-warning btn-sm me-2"
                             data-bs-target="#kt_modal_update" data-bs-toggle="modal">
@@ -156,6 +141,7 @@
                         </button>
                     </td>
                 </tr>
+                @endforeach
             </tbody>
         </table>
         <!--end::Table-->

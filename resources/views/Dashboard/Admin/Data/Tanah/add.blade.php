@@ -14,13 +14,13 @@
         <!--begin::Modal header-->
         <div class="card-body">
             <!--begin:Form-->
-            <form class="form" action="#">
-
+            <form class="form" action="{{route('tanah.store')}}" method="POST">
+                @csrf
                 <div class="d-flex flex-column mb-8 fv-row">
                     <label class="d-flex align-items-center fs-6 fw-bold mb-2">
                         <span class="required">Nama Tanah</span>
                     </label>
-                    <input type="text" class="form-control form-control-solid" placeholder="Masukan Nama Tanah" />
+                    <input type="text" name="name" class="form-control form-control-solid" placeholder="Masukan Nama Tanah" />
                 </div>
                 <div class="row">
                     <div class="col-lg-4">

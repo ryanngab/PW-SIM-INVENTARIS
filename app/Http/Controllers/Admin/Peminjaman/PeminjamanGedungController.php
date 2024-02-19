@@ -13,4 +13,10 @@ class PeminjamanGedungController extends Controller
         $title = 'Data Peminjaman Gedung';
         return view('Dashboard.Admin.Peminjaman.Gedung.index',compact('title'));
     }
+    
+    public function create() {
+
+        $title = 'Pinjam Gedung';
+        return view('Dashboard.Admin.Peminjaman.Gedung.add',compact('title'));
+    }
 }

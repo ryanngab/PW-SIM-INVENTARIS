@@ -31,8 +31,8 @@ use Illuminate\Support\Facades\Route;
 
 // Route Auth
 
-Route::get('/login',[AuthController::class, 'index'])->name('auth.index');
-Route::post('/login',[AuthController::class, 'authanticate'])->name('auth.authen');
+Route::get('/',[AuthController::class, 'index'])->name('auth.index');
+Route::post('/',[AuthController::class, 'authanticate'])->name('auth.authen');
 Route::get('/register',[AuthController::class, 'register'])->name('auth.register');
 Route::post('/register',[AuthController::class, 'store'])->name('auth.store');
 Route::post('/logout',[AuthController::class, 'logout'])->name('auth.logout');
@@ -54,6 +54,7 @@ Route::get('/admin-dashboard/Ruangan/edit',[RuanganController::class,'edit'])->n
 // Route Tanah
 Route::get('/admin-dashboard/Tanah',[TanahController::class,'index'])->name('tanah.index');
 Route::get('/admin-dashboard/Tanah/add',[TanahController::class,'create'])->name('tanah.add');
+Route::post('/admin-dashboard/Tanah/add',[TanahController::class,'store'])->name('tanah.store');
 Route::get('/admin-dashboard/Tanah/edit',[TanahController::class,'edit'])->name('tanah.edit');
 
 // Route Barang
@@ -65,9 +66,15 @@ Route::get('/admin-dashboard/Barang/edit',[BarangController::class,'edit'])->nam
 
 // Route Peminjaman Barang
 Route::get('/admin-dashboard/Peminjaman-Barang',[PeminjamanBarangController::class,'index'])->name('peminjamanBarang.index');
+Route::get('/admin-dashboard/Peminjaman-Barang/add',[PeminjamanBarangController::class,'create'])->name('peminjamanBarang.add');
+
 Route::get('/admin-dashboard/Peminjaman-Ruangan',[PeminjamanRuanganController::class,'index'])->name('peminjamanRuangan.index');
-Route::get('/admin-dashboard/Peminjaman-Tanah',[PeminjamanTanahController::class,'index'])->name('peminjamanTanah.index');
+Route::get('/admin-dashboard/Peminjaman-Ruangan/add',[PeminjamanRuanganController::class,'create'])->name('peminjamanRuangan.add');
+
 Route::get('/admin-dashboard/Peminjaman-Gedung',[PeminjamanGedungController::class,'index'])->name('peminjamanGedung.index');
+Route::get('/admin-dashboard/Peminjaman-Gedung/add',[PeminjamanGedungController::class,'create'])->name('peminjamanGedung.add');
+
+Route::get('/admin-dashboard/Peminjaman-Tanah',[PeminjamanTanahController::class,'index'])->name('peminjamanTanah.index');
 
 
 

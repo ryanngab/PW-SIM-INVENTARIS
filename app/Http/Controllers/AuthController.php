@@ -47,7 +47,7 @@ class AuthController extends Controller
 
         User::create($validateData);
 
-        return redirect('/login')->with('success', 'Registrasi berhasil!! silahkan Login');
+        return redirect('/')->with('success', 'Registrasi berhasil!! silahkan Login');
     }
 
     // Route Reset Pw
@@ -64,7 +64,7 @@ class AuthController extends Controller
 
         request()->session()->regenerateToken();
 
-        return redirect('/login');
+        return redirect('/');
     }
 
 }
