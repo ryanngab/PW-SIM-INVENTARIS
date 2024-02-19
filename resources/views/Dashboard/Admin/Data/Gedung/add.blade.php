@@ -15,7 +15,8 @@
     <!--begin::Modal header-->
     <div class="card-body">
         <!--begin:Form-->
-        <form class="form" action="#">
+        <form class="form" action="{{route('gedung.store')}}" method="POST">
+            @csrf
             <div class="row">
                 <div class="col-lg-6">
                     <div class="d-flex flex-column mb-8 fv-row">
@@ -34,12 +35,16 @@
                         </label>
                         <!--end::Label-->
                         <!--begin::Select-->
-                        <select name="nama_tanah" data-control="select2"
+                        <select name="tanah_id" data-control="select2"
                             data-placeholder="Pilih nama tanah"
                             class="form-select form-select-solid">
-                            <option value="">Pilih nama tanah....</option>
-                            <option value="Baik">Baik</option>
-                            <option value="Buruk">Buruk</option>
+                            @foreach ( $tanahs as $tanah)
+                                    @if (old('tanah_id') == $tanah->id)
+                                        <option value="{{ $tanah->id }}" selected>{{ $tanah->name }}</option>
+                                     @else
+                                         <option value="{{ $tanah->id }}">{{ $tanah->name }}</option>
+                                    @endif
+                                @endforeach        
                         </select>
                         <!--end::Select-->
                     </div>

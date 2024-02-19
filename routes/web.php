@@ -44,6 +44,7 @@ Route::get('/admin-dashboard',[DashboardController::class,'index'])->name('admin
 // Route Gedung
 Route::get('/admin-dashboard/Gedung',[GedungController::class,'index'])->name('gedung.index');
 Route::get('/admin-dashboard/Gedung/add',[GedungController::class,'create'])->name('gedung.create');
+Route::post('/admin-dashboard/Gedung/add',[GedungController::class,'store'])->name('gedung.store');
 Route::get('/admin-dashboard/Gedung/edit',[GedungController::class,'edit'])->name('gedung.edit');
 
 // Route Ruangan
@@ -60,6 +61,7 @@ Route::get('/admin-dashboard/Tanah/edit',[TanahController::class,'edit'])->name(
 // Route Barang
 Route::get('/admin-dashboard/Barang',[BarangController::class,'index'])->name('barang.index');
 Route::get('/admin-dashboard/Barang/add',[BarangController::class,'create'])->name('barang.add');
+Route::post('/admin-dashboard/Barang/add',[BarangController::class,'store'])->name('barang.store');
 Route::get('/admin-dashboard/Barang/edit',[BarangController::class,'edit'])->name('barang.edit');
 
 
